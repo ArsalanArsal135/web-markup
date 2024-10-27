@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #052942; /* Main background color */
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #A33A44;
+    color: white;
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    justify-content: space-between; /* Add space between logo and nav */
+    padding: 15px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Remove bottom margin to align with nav */
+}
+
+header .logo img {
+    width: 60px; /* Adjust size of the logo */
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header nav a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+header nav a:active {
+    color: #FF4500; /* Change color when active */
+}
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 40px;
+    color: white; /* Adjust the text color as needed */
+    border-radius: 5px;
+}
+
+.title-section h2 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+/* Restaurant Section */
+.restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Ensure both items stretch to the same height */
+    margin: 20px 0;
+}
+
+.restaurant .description {
+    background-color: #f0f0f0;
+    color: #052942;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    margin-right: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the paragraph content vertically */
+}
+
+.restaurant .photo {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the image vertically */
+}
+
+.restaurant .photo img {
+    width: 100%;
+    height: 45vh; /* Ensure the image resizes according to the paragraph height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.restaurant .info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.restaurant .info-box {
+    flex: 1 1 45%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Reverse layout for alternating sections */
+.restaurant.reverse {
+    flex-direction: row-reverse;
+}
+
+.restaurant.reverse .description {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #A33A44;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 10px;
+}
+
+footer .logo img {
+    width: 5%; /* Adjust size of the logo */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button-section button {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex: 1 1 10%;
+    }
+
+    .about {
+        margin: 20px 30px;
+    }
+}

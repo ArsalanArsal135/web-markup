@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #052942;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #A33A44;
+    color: white;
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    justify-content: space-between; /* Add space between logo and nav */
+    padding: 15px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Remove bottom margin to align with nav */
+}
+
+header .logo img {
+    width: 60px; /* Adjust size of the logo */
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header nav a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+header nav a:active {
+    color: #FF4500; /* Change color when active */
+}
+
+/* Hero and About Section Container */
+.hero-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure both items stretch to the same height */
+    margin: 20px 0;
+}
+
+.hero {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about {
+    flex: 1 1 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: white;
+    border-radius: 10px;
+    border-color: #A33A44; /* Add border-color */
+    border-style: solid; /* Add border-style */
+    border-width: 2px; /* Add border-width */
+}
+
+.about h2 {
+    color: #052942;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #052942;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Add margin to separate paragraphs */
+}
+
+/* List Styling */
+.about ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add padding to the left */
+    margin-bottom: 15px; /* Add margin to the bottom */
+}
+
+.about ul li {
+    color: #052942;
+    margin-bottom: 10px; /* Add margin to separate list items */
+    line-height: 1.6;
+}
+
+/* Buttons Section */
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button-section button {
+    flex: 1 1 45%;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #A33A44;
+    border-radius: 10px;
+    color: #A33A44;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-section button:hover {
+    background-color: #A33A44;
+    color: white;
+}
+
+.button-section button:active {
+    background-color: #8b2e3a; /* Change background color when active */
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #A33A44;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border-color: #A33A44; /* Add border-color */
+    border-style: solid; /* Add border-style */
+    border-width: 2px 0 0 0; /* Add border-width (top border only) */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 10px;
+}
+
+footer .logo img {
+    width: 5%; /* Adjust size of the logo */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+/* Add hover and active states for footer links */
+footer nav a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+footer nav a:active {
+    color: #FF4500; /* Change color when active */
+}
+
+/* Cookies Message */
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999; /* Ensure the cookies message is above all other content */
+}
+
+.cookies-message p {
+    margin: 0;
+    padding: 0;
+}
+
+.cookies-message button {
+    background-color: #A33A44;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookies-message button:hover {
+    background-color: #8b2e3a;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button-section button {
+        margin-left: 5px;
+        margin-right: 5px;
+        flex: 1 1 10%;
+    }
+
+    .about {
+        margin: 20px 30px;
+    }
+}

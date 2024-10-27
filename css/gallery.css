@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #052942; /* Main background color */
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #A33A44;
+    color: white;
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    justify-content: space-between; /* Add space between logo and nav */
+    padding: 15px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Remove bottom margin to align with nav */
+}
+
+header .logo img {
+    width: 60px; /* Adjust size of the logo */
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    letter-spacing: 0.5px; /* Add letter-spacing */
+}
+
+header nav a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+header nav a:active {
+    color: #FF4500; /* Change color when active */
+}
+
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 40px;
+    color: white; /* Adjust the text color as needed */
+    border-radius: 5px;
+}
+
+.title-section h2 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 50vh;
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: #A33A44;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 10px;
+}
+
+footer .logo img {
+    width: 5%; /* Adjust size of the logo */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
